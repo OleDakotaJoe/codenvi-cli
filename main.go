@@ -11,7 +11,7 @@ import (
 func main() {
 	core.Config()
 	body := types.Closure{
-		Args:        nil,
+		Args: nil,
 		Mutator: func(mutator *types.Closure) {
 			print(os.Getenv("HELLO"))
 			print("ran")
