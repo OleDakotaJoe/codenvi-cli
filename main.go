@@ -10,7 +10,8 @@ func main() {
 	body := types.Closure{
 		Args: nil,
 		Mutator: func(mutator *types.Closure) {
-			terminal.EnviTermialV2()
+			//terminal.EnviTermialV2()
+			terminal.EnviTerminal()
 		},
 		ReturnValue: nil,
 	}
