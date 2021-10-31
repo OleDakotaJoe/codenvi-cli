@@ -1,21 +1,16 @@
 package main
 
 import (
-	core "github.com/oledakotajoe/codenvi-core"
 	"github.com/oledakotajoe/codenvi-core/environment"
 	"github.com/oledakotajoe/codenvi-core/terminal"
 	"github.com/oledakotajoe/codenvi-core/types"
-	"os"
 )
 
 func main() {
-	core.Config()
 	body := types.Closure{
 		Args: nil,
 		Mutator: func(mutator *types.Closure) {
-			print(os.Getenv("HELLO"))
-			print("ran")
-			terminal.EnviTerminal()
+			terminal.EnviTermialV2()
 		},
 		ReturnValue: nil,
 	}
